@@ -1,0 +1,13 @@
+services:
+  nextjs:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - type: bind
+        source: ./portfolio
+        target: /usr/src/app
+    stdin_open: true
+    tty: true
+    working_dir: /usr/src/app
+    command: npm run dev
