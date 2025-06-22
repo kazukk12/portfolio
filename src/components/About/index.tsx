@@ -24,6 +24,8 @@ const About = () => {
                         <h2 className="text-3xl font-bold mb-4 text-gray-800">About me</h2>
                         <p className="text-gray-700 leading-relaxed">
                             はじめまして、Kazumaです。WEB engineerをやってます。
+                            <br />
+                            reactとnext.js勉強がてらにこのPortfolio作成中です。
                         </p>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-screen">
+        <section id="hero" className="relative w-full h-screen">
             {/* 背景画像 */}
             <Image
                 src="/hero-bg.png"

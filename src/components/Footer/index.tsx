@@ -1,16 +1,15 @@
+"use client";
+
+import React from "react";
+
 const Footer = () => {
-    return(
-        <footer>
-            <div>
-                <h1>My Portfolio</h1>
-                <nav>
-                    <a href="">Home</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact</a>
-                </nav>
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="bg-black text-white py-6 mt-20">
+      <div className="max-w-4xl mx-auto px-4 text-center text-sm">
+        &copy; {new Date().getFullYear()} Kazuma Kobayashi. All rights reserved.
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
