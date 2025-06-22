@@ -1,0 +1,37 @@
+name: CI
+
+# いつこのワークフローを走らせるか
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+
+# 実行するジョブの定義
+jobs:
+  build:
+    # GitHubが用意しているUbuntuマシンで実行される
+    runs-on: ubuntu-latest
+
+    steps:
+      # リポジトリのコードをGitHub Actionsマシンにクローン
+      - name: チェックアウトリポジトリ
+        uses: actions/checkout@v3
+
+      - name: Node.jsをセットアップ
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: パッケージをインストール
+        run: npm install
+
+      - name: 型チェック（TypeScript）
+        run: npm run type-check
+
+      - name: Lintチェック
+        run: npm run lint
+
+      - name: ビルドテスト
+        run: npm run build
