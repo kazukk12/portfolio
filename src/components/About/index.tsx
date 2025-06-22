@@ -26,6 +26,8 @@ const About = () => {
                             はじめまして、Kazumaです。WEB engineerをやってます。
                             <br />
                             reactとnext.js勉強がてらにこのPortfolio作成中です。
+                            <br />
+                            これからがんばってこうと思います！
                         </p>
                     </div>
                 </div>
