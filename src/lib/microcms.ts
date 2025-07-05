@@ -1,8 +1,8 @@
 import axios from "axios";
 import { Blog } from "@/types/microcms";
 
-const serviceDomain = process.env.MICROCMS_SERVICE_DOMAIN!;
-const apiKey = process.env.MICROCMS_API_KEY!;
+const serviceDomain = process.env.NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN!;
+const apiKey = process.env.NEXT_PUBLIC_MICROCMS_API_KEY!;
 
 export const client = axios.create({
   baseURL: `https://${serviceDomain}.microcms.io/api/v1`,
