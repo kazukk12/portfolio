@@ -1,13 +1,8 @@
 import { getBlogDetail } from "@/lib/microcms";
 import { notFound } from "next/navigation";
 
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
-
-export default async function BlogDetailPage({ params }: PageProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function BlogDetailPage({ params }: any) {
   const blog = await getBlogDetail(params.id);
 
   if (!blog) {
