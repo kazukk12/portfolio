@@ -1,11 +1,13 @@
 import { getBlogDetail } from "@/lib/microcms";
 import { notFound } from "next/navigation";
 
-export default async function BlogDetailPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+export default async function BlogDetailPage({ params }: PageProps) {
   const blog = await getBlogDetail(params.id);
 
   if (!blog) {
