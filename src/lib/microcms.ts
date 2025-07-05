@@ -25,7 +25,7 @@ export const getBlogList = async () : Promise<Blog[]> => {
 // 記事詳細を取得(id指定)
 export const getBlogDetail =async (id: string): Promise<Blog | null> => {
     try {
-        const res = await client.get(`/blog/${id}`);
+        const res = await client.get(`/blogs/${id}`);
         return res.data;
     } catch (error) {
         console.error(`記事詳細の取得に失敗しました: ${id}`, error);
