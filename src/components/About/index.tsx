@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const About = () => {
     return (
-        <section id="about" className="py-20 bg-gray-100">
+        <section id="about" className="scroll-mt-20 py-20 bg-gray-100">
             <div className="max-w-4xl mx-auto px-4">
                 <div className="border-2 border-gray-300 rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8 bg-white shadow-md">
                     {/* 画像 */}
