@@ -1,7 +1,7 @@
 
 const Works = () => {
     return (
-        <section id="works"  className="py-20 bg-white">
+        <section id="works"  className="scroll-mt-20 py-20 bg-white">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-12 text-center text-black">Works</h2>
 

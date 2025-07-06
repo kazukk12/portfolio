@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "M Portfolio",
+  title: "Portfolio",
   description: "welcome to my portfolio site",
 };
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className="pt-24">
+      <body className="pt-16">
         {/* 共通ヘッダー */}
         <Header />
 
