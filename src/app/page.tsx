@@ -5,11 +5,11 @@ import BlogList from "@/components/BlogList";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <About />
       <Works />
       <BlogList />
-    </main>
+    </>
   );
 }
